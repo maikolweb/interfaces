@@ -35,9 +35,9 @@ public class Principal {
         
         System.out.println(v1.calcularVenta());
         System.out.println("\n");
-        System.out.println(v1.getEmpleado().getNombre());
+        System.out.println("Nombre del vendedor "+v1.getEmpleado().getNombre());
         System.out.println("\n");
-        System.out.println(v1.descuento(new ventaCatalogo()));
+        System.out.println( "total venta con descuento"+v1.descuento(new ventaCatalogo()));
         
         
         

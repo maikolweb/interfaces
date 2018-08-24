@@ -53,6 +53,7 @@ public class Venta {
     }
 
     public double calcularVenta() {
+        
         for (Producto producto : productos) {
             totalVenta += producto.getCantidad() * producto.getPrecio();
 
@@ -67,7 +68,7 @@ public class Venta {
 
     public double descuento(TipoDescuento tipoDescuento) {
 
-       return (calcularVenta() - tipoDescuento.TipoDescuento(this));
+       return (this.totalVenta - tipoDescuento.TipoDescuento(this));
     }
 
 }

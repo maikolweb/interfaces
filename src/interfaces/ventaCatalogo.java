@@ -28,8 +28,8 @@ public class ventaCatalogo implements TipoDescuento{
     @Override
     public double TipoDescuento(Venta venta) {
        
-        if(venta.calcularVenta() > 10000){
-           descuento= (venta.calcularVenta() * 20 /100);
+        if(venta.getTotalVenta() > 10000){
+           descuento= (venta.getTotalVenta() * 20 /100);
         }
         
         
